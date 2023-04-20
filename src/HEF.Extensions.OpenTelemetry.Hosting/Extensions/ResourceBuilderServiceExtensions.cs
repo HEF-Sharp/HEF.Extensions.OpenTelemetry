@@ -7,7 +7,7 @@ namespace OpenTelemetry.Resources
         public static ResourceBuilder AddService(this ResourceSettingsBuilder settingBuilder)
         {
             if (settingBuilder == null)
-                throw new ArgumentNullException(nameof(settingBuilder));            
+                throw new ArgumentNullException(nameof(settingBuilder));
 
             return settingBuilder.Settings(new ResourceServiceConfigurationReader());
         }
